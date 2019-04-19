@@ -1,0 +1,86 @@
+body{
+	background: white;
+}
+
+h1{
+	color: red;
+}
+
+table{
+	color: red;
+}
+
+a{
+	font-size: 20px;
+	color: red;
+	text-decoration: blink;
+}
+
+.about{
+	text-align: justify;
+	
+	margin-left: 150px;
+	margin-right: 180px;
+}
+
+.carousel, ul{
+	height: 450px;
+}
+
+.carousel{
+	position: absolute;
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 120px;
+	margin-left: 150px;
+	margin-bottom: 50px;
+}
+
+.carousel li{
+	display: inline-block;
+	height: 750px;
+	float: left;
+	position: relative;
+	width: 1000px;
+}
+
+.carousel ul{
+	position: absolute;
+	left: 0;
+	top: -15px;
+	width: 9000px;
+	list-style: none;
+	margin-left: -50px;
+	transition: left .3s linear;
+	-moz-transition: left .3s linear;
+	-o-transition: left .3s linear;
+	-webkit-transition: left .3s linear;
+	animation:  slide-animation 15s infinite;
+}
+
+.carousel ul:hover{
+	animation-play-state: paused;
+}
+
+.carousel-container{
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+}
+
+.carousel-container img{
+	width: 100%;
+	padding: 0 10px;
+}
+
+@keyframes slide-animation{
+	20%{left: 0}
+	25%{left: -1000px}
+	45%{left: -1000px}
+	50%{left: -2000px}
+	70%{left: -2000px}
+	75%{left: -3000px}
+	98%{left: -3000px}
+	100%{left: 0}
+}

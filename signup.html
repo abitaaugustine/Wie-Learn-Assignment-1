@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Signup</title>
+		<link rel="stylesheet" type="text/css" href="signup.css">
+		<script>
+			function myFunction() 
+			{
+				var x=new Object();
+				x=document.getElementById("msg");
+				x.className="show";
+				setTimeout(function(){x.className=x.className.replace("show", ""); }, 60000);
+			}
+			function signup()
+			{
+				var a= new Object();
+				a = document.getElementById("pass").value;
+				var b = new Object();
+				b = document.getElementById("rpass").value;
+				if (a == b)
+				{
+					myFunction()
+				}
+				else
+					alert("Passwords do not match");
+			}
+		</script>
+	</head>
+	<body background="C:\Users\Admin\Desktop\Wie-learn assignment 1 Abita\4.jpg" id="bgimg">
+		<div id="signup"  align="center">
+			<b><input type="text" name="name" placeholder="Name"></b><br><br>				
+			<b><input type="text" name="username" placeholder="Username"></b><br><br>
+			<b><input type="password" id="pass" placeholder="Password"></b><br><br>
+			<b><input type="password" id="rpass" placeholder="Confirm Password"></b><br><br>
+			<b><button onclick="signup()">Sign Up</button></b><br><br>
+			<b>Already have an account<a href="login.html"> Log in</a></b><br><br>
+		</div>
+		<div id="msg">
+			<b>Congratulations, sign up successful<br>
+			<a href="login.html">Log in</a></b>
+		</div>
+	</body>
+</html>

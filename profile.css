@@ -1,0 +1,70 @@
+#bgimg{
+	height: 100%; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#success{
+	font-size: 35px;
+	font-family: sans-serif;
+	color: darkblue;
+	background-color: #cfc0ff;
+	padding-top: 80px;
+	width: 400px;
+	margin: auto;
+	margin-top: 0px;
+	height: 150px;
+	margin-left: 180x;
+	opacity: 0.6;
+}
+
+#Pallindrome{
+	font-size: 25px;
+	font-family: sans-serif;
+	color: #583d90;
+	background-color: pink;
+	padding-top: 20px;
+	width: 400px;
+	margin: auto;
+	margin-top: 0px;
+	height: 250px;
+	margin-left: 180x;
+	opacity: 0.6;
+}
+button{
+	border: none;
+	width: 250px;
+	background: #e91e63a6;
+	color: darkblue;
+	font-size: 20px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+input
+{
+	width: 240px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play', sans-serif;
+	font-size: 20px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: darkblue;
+}
+	
+a{
+	color: white;
+	text-decoration: blink;
+}
+
+a:hover
+{
+	color:red;
+}

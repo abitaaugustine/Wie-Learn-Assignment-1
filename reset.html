@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reset</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<script>
+			function myFunction2() 
+			{
+				var x=new Object();
+				x=document.getElementById("msg");
+				x.className="show";
+				setTimeout(function(){x.className=x.className.replace("show", ""); }, 60000);
+			}
+			function reset()
+			{
+				var a= new Object();
+				a = document.getElementById("pass").value;
+				var b = new Object();
+				b = document.getElementById("rpass").value;
+				if (a == b)
+				{
+					myFunction2()
+				}
+				else
+					alert("Passwords do not match");
+			}
+		</script>
+	</head>
+	<body background="C:\Users\Admin\Desktop\Wie-learn assignment 1 Abita\6.jpg" id="bgimg">
+		<div id="reset"  align="center">				
+			<b><input type="text" name="username" placeholder="Username"></b><br><br>
+			<b><input type="password" id="pass" placeholder="New Password"></b><br><br>
+			<b><input type="password" id="rpass" placeholder="Confirm New Password"></b><br><br>
+			<b><button onclick="reset()">Change</button></b><br><br><br>
+			<b>Know your Password<a href="login.html"> Log in</a></b><br><br>
+		</div>
+		<div id="msg">
+			<b>Congratulations, Password change successful<br>
+			<a href="login.html">Log in</a></b>
+		</div>
+	</body>
+</html>

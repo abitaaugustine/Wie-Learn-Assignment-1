@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login or signup</title>
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<script >
+			function myFunction1() 
+			{
+				var x=new Object();
+				x=document.getElementById("msg");
+				x.className="show";
+				setTimeout(function(){x.className=x.className.replace("show", ""); }, 60000);
+			}
+
+			function login()
+			{
+				var people=[
+					{ 
+						unam: "admin" ,
+						pass: "admin"
+					},
+					{
+						unam: "student",
+						pass: "student"
+					},
+					{
+						unam: "teacher",
+						pass: "teacher"
+					}
+				]
+				var c=0
+				var unam=document.getElementById("username").value
+				var pass=document.getElementById("pass").value
+				for(i=0;i<people.length;i++)
+				{
+					if(unam==people[i].unam && pass==people[i].pass)
+					{
+						c=1
+						myFunction1()
+					}
+				}
+				if (c==0)
+				{
+					alert("Username and Password does not match")
+				}
+			}
+		</script>
+	</head>
+	
+	<body background="C:\Users\Admin\Desktop\Wie-learn assignment 1 Abita\2.jpg" id="bgimg" >
+		<p align="right"> Go to <a href="C:\Users\Admin\Desktop\Wie-learn assignment 1 Abita\home.html" > Home Page</a></p><br>
+		<div id="STUDENT">
+			<h1 align="center">Login</h1>
+		</div>
+		<div id="login"  align="center">
+			<br>				
+			<b><input type="text" id="username" placeholder="Username"></b><br><br>
+			<b><input type="password" id="pass" placeholder="Password"></b><br><br><br>
+			<b><button onclick="login()">Log In</button></b><br><br>
+			<b>Forgot your password<a href="reset.html">Reset password</a></b><br>
+			<b>Don't have an account<a href="signup.html"> Register Here</a></b><br><br>
+		</div>
+		<div id="msg">
+			<b>Congratulations, login successful<br>
+			<a href="profile.html">Go to Profile</a></b>
+		</div>
+	</body>
+</html>
