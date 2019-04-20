@@ -69,6 +69,10 @@ button
 	cursor: pointer;
 }
 
+p{
+	color: white;
+}
+
 a{
 	color: darkviolet;
 	text-decoration: blink;
